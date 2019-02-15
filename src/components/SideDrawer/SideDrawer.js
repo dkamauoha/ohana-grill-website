@@ -14,6 +14,7 @@ const SideDrawer = props => {
                 <div style={{height: '50px', marginTop: '25px'}}>
                     <Link to='/'><li>Home</li></Link>
                     <Link to='/menu'><li>Menu</li></Link>
+                    <Link to='/about'><li>About</li></Link>
                 </div>
                 <div style={{marginBottom: '40px', color: 'white', textAlign: 'center'}}>
                     <p>1409 S State St</p>

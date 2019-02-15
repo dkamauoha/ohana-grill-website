@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax';
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
 
 //images
 import beach from '../../images/sean-o-406693-unsplash.jpg';
@@ -34,7 +35,25 @@ class Home extends Component {
                 <div style={insideStyles}>801 Ohana Grill</div>
             </div>
         </Parallax>
-        <div className='home__carousel-container'>
+        {/* <Link style={{textDecoration: 'none'}} to='/menu'>
+            <div className='home__menu-image'>
+                <h3 className='home__about-text'>View our Menu</h3>
+            </div>
+        </Link> */}
+        <Link style={{textDecoration: 'none'}} to='/menu'>
+            <Parallax bgImage={food} strength={500}>
+                <div style={{height: 300}}>
+                    <div style={insideStyles}>View our Menu</div>
+                </div>
+                
+            </Parallax>
+        </Link>
+        <Link style={{textDecoration: 'none'}} to='/about'>
+            <div className='home__about-image'>
+                <h3 className='home__about-text'>About Us</h3>
+            </div>
+        </Link>
+        {/* <div className='home__carousel-container'>
             <div className='home__carousel'>
                 <Carousel
                     autoPlay
@@ -55,8 +74,9 @@ class Home extends Component {
                         <p></p>
                     </div>
                 </Carousel>
+                
             </div> 
-        </div>
+        </div> */}
         
       </div>
     )

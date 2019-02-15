@@ -9,8 +9,10 @@
 
 .menu__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     font-family: Roboto, sans-serif;
 }
 
@@ -24,7 +26,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%
+    width: 40%;
+    min-width: 300px;
 }
 
 .menu__plates-header {
@@ -91,4 +94,31 @@
     display: flex;
     margin-top: 15px;
     justify-content: space-around;
+}
+
+.menu__daily-specials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.menu__day-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__day-header {
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu__polynesian-plate {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 10px;
 }

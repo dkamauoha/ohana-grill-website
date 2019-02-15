@@ -12,13 +12,13 @@ class Menu extends Component {
     return (
         <div>
             <h2 className='menu__header'>Menu</h2>
-            <div className='menu__image-container'>
+            {/* <div className='menu__image-container'>
                 <img src={food} alt=''/>
-            </div>
+            </div> */}
             <div className='menu__container'>
                 <div className='menu__plates-container'>
-                    <h5 className='menu__plates-description'>All plates come with 2 scoops of rice and 1 scoop of mac salad</h5>
                     <h4 className='menu__plates-header'>Combo Plates</h4>
+                    <h5 className='menu__plates-description'>All plates come with 2 scoops of rice and 1 scoop of mac salad</h5>
                     <div className='menu__plates-prices'>
                         <div className='menu__plate-type'>
                             <p>1 Meat</p>
@@ -139,6 +139,23 @@ class Menu extends Component {
                 </div>
                 <div className='menu__daily-specials'>
                     <h4 className='menu__plates-header'>Daily Specials</h4>
+                    <div className='menu__day-container'>
+                        <h5 className='menu__day-header'>Friday</h5>
+                        <div className='menu__polynesian-plate'>
+                            <p>Polynesian Plates</p>
+                            <p>$14</p>
+                        </div>
+                        <p>Each plate comes with 1 Scoop of Macaroni Salad, Samoan Chop Suey, Taro</p>
+                    </div>
+                    <div className='menu__day-container'>
+                        <h5 className='menu__day-header'>Saturday</h5>
+                        <div className='menu__polynesian-plate'>
+                            <p>Breakfast Plates (served from 9am - 11am)</p>
+                            <p>$10</p>
+                        </div>
+                        <p>Banana Macadamia Nut Pancakes (served with Coconut Syrup)</p>
+                        <p>Red Raider (Teriyaki Beef, Spam, Portuguese Sausage, Eggs, and Rice)</p>
+                    </div>
                 </div>
             </div>
         </div>
